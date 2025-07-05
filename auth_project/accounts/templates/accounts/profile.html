@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div class="container profile-container">
+    <h2 class="profile-heading">👤 Welcome, {{ user.username }}!</h2>
+    
+    <p class="profile-text">This is your profile page. You are successfully logged in.</p>
+
+    
+    <a href="{% url 'logout' %}" class="button logout-btn">Logout</a>
+  
+  </div>
+</body>
+</html>
